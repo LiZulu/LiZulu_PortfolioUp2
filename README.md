@@ -1,1 +1,2 @@
-# LiZulu_PortfolioUp2
+# LiZulu_PortfolioUp
+Updated repository for Nurliyana Khairunisa Bte Zuliskandar

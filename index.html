@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio </title>
+    <link rel="stylesheet" href="css/maincss.css">
+    <script src="https://kit.fontawesome.com/cadf75f970.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img class="logo" src="/personal-portfolio-img/images/logo.png"> -->
+                <ul id="side_menu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#services"> Services </a></li>
+                    <li><a href="#portfolio"> Portfolio </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header_text">
+                <p> Developer </p>
+                <h1> Hello, I'm <span> Liyana </span><br> Zuliskandar from Brunei </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--///////// ABOUT ME /////////-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="portfolio_imgs/avatarkai.jpg">
+                </div>
+                    
+                <div class="about_col_2">
+                    <h1 class="subtitle"> About me </h1>
+                    <p> I am a college graduate with a degree in computer science from University of Chester and have recently completed my term as an IT officer.
+                        I have experience working as an IT officer at EGNC and eventually the Prime Ministers Office. 
+                        I was given different roles ranging from graphic designer, IT Support, and conducting research/ investigations on topics such as Digital ID, services, and info-communications.  
+                    </p>
+
+                    <div class="tab_titles">
+                        <p class="tab_links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab_links" onclick="opentab('experience')"> Work Experience </p>
+                        <p class="tab_links" onclick="opentab('education')"> Education </p>
+                    </div>
+
+                    
+                    <div class="tab_contents active_tab" id="skills">
+                        <p> Good proficiency in software engineering and development, web development, project management (PM), General IT work, graphic design and multimedia. Experiences in PM include supporting projects and programs, such as scope management, communication management and schedule management. 
+                            I feel my experiences under the I-Ready program as an IT Officer has been very beneficial and improved my knowledge of the professional working world. 
+                            I am also willing to learn and develop to expand on what has been taught and am industrious, highly organized, and committed. My skills: </p>
+                        <ul>
+                            <li><span> Graphic design. </span> <br> For my work during IReady, I have created posters, banners, certificates and ads. </li>
+                            <li><span> Web and systems development  </span> <br> I have experience creating websites and systems using softwares such as visual studios 2022, visual studio and Adobe Dreamweaver and programming languages such as Java, C#, C++ and visual basic  </li>
+                            <li><span> App Development </span> <br> I have also developed android/ OS applications for my computer science course utilizing android studio </li>
+                            <li><span> Programming Language Experiences: </span> <br> C#, C++, Java, PHP, Visual Basic </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span> March 2021 – Feb 2022  </span> <br> 
+                                <span> IT Officer (Prime Minister’s Office, Brunei) </span>
+                                <br> I continued my role as an IT officer at Jabatan Perdana Menteri (JPM) for 1 Year. Under the service assurance unit, I was involved in General IT technician work (i.e. installing, configuring, and maintaining software and hardware components of IT equipment and network systems). After transferring to the Application Development Unit, I was exposed to Microsoft SharePoint 2013 and utilized it to develop systems. </li>
+                            <li><span> Aug 2020 –March 2021 </span> <br> 
+                                <span> IT Officer (E-government National Center, Brunei) </span> 
+                                <br> Spent 6 months under EGNC as an IT officer (I-Ready). Performed duties such as: 
+                                <br> . Graphic design, where I created posters, banners, certificates and ads. 
+                                <br> . Video Editing. 
+                                <br> . Researcher (Conducted research on various topics such as info-communications, digital id, improvement of government websites)  </li>
+                            <li><span> 2014 </span> <br> 
+                                <span> Attachment Student/ Intern (FAC Department) </span> 
+                            <br> After the completion of my National Diploma in MKJB, I was assigned to do my attachment in SHELL HQ as a Data Analyst in the FAC (Financial Accounting Department). 
+                            In which, I learned quite a bit of project management such as managing and delegating tasks, •	Develop project plans (i.e. evaluating risks, creating time-tables/ Gantt charts) and manage data/ information using Excel, PowerPoint, PIAB (Project in a box). </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>  BSC. (Hons) in Computer Science (2015-2018) </span> <br> Laksamana College of Business <br> Brunei Darussalam </li>
+                            <li><span> Diploma in Information and Technology (2012-2014) </span> <br> IBTE Jefri Bolkiah formerly Maktab Kejuruteraan Jefri Bolkiah <br> Brunei Darussalam </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--///////// MY SERVICES /////////-->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle"> My services </h1>
+            <div class="services_list">
+                <div> 
+                    <i class="fa-solid fa-code"></i>
+                    <h1> Web Development </h1>
+                    <p> I am experienced with the process of web-design and development.
+                        <br> Softwares: Visual Studio Code and Visual Studio
+                        <br> #C, Javascript, HTML, and CSS.
+                    </p>
+                    <!-- <a href="#"> Learn more </a> -->
+                </div>
+
+                <div> 
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h1> Game development </h1>
+                    <p> Experienced with working with softwares such as Unity Engine and Unreak Engine.
+                        <br> Programming Languages: C++, C# and Java.
+                    </p>
+                    <!-- <a href="#"> Learn more </a> -->
+                </div>
+
+                <div> 
+                    <i class="fa-brands fa-app-store"></i>
+                    <h1> Application Development </h1>
+                    <p> I have experience creating applications for andoid utilizing android studios.
+                    </p>
+                    <!-- a href="#"> Learn more </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+t
+    <!--///////// MY PORTFOLIO /////////-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle"> My work </h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="portfolio_imgs/tictactoe.jpg">
+                    <div class="layer">
+                        <h3> Tic Tac Toe Game App </h3>
+                        <p>An tic tac toe game app developed on Android Studios for android mobile phones for my degree course.
+                           <br> In the game, players can play tic tac toe and keep track of their scores.  </p>
+                           <a href="#"> <i class="fa-solid fa-link"></i> </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="portfolio_imgs/lcb4.png">
+                    <div class="layer"> 
+                        <h3> Laksamana College Of Business Website </h3>
+                        <p> A Website created for an assignment at laksamana college of business using the cloud-based web development services known as Wix. </p>
+                            <a href="https://liyanakz94.wixsite.com/co4002dmpass2"> <i class="fa-solid fa-link"></i> </a>
+                    </div>                   
+                </div>
+
+                <div class="work">
+                    <img src="portfolio_imgs/starwars.png">
+                    <div class="layer"> 
+                        <h3> Star wars website  </h3>
+                        <p> A website created for an assignment at LCB utilizing HTML, CSS and Javascript </p>
+                            <a href="https://kaizool.github.io/1430715CO4027Assignment2.github.io/#"> <i class="fa-solid fa-link"></i> </a>
+                    </div>                   
+                </div>
+
+                <div class="work">
+                    <img src="portfolio_imgs/snippiner.png" height="260px">
+                    <div class="layer">
+                        <h3> 2D Side-scrolling platforming game </h3>
+                        <p> A 2D platforming game created on the unity engine. You take control of the character and traverse through 
+                            3 levels to complete. </p>
+                            <a href="https://www.youtube.com/watch?v=d1lNlgxMgkk&t=98s&ab_channel=LiZulu"> <i class="fa-solid fa-link"></i> </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="portfolio_imgs/lcbvideo.png" height="260px">
+                    <div class="layer">
+                        <h3> Laksamana College of Business Video </h3>
+                        <p> A video created for my assignment for Laksamana College of Business. </p>
+                            <a href="https://www.youtube.com/watch?v=v1-Xj0Lkm50&ab_channel=LiZulu"> <i class="fa-solid fa-link"></i> </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="portfolio_imgs/languagememorygame.png" height="260px">
+                    <div class="layer">
+                        <h3> Japanese Language Memory Game </h3>
+                        <p> A memory japanese language game developed using React </p>
+                            <a href="https://lizulu.github.io/reactmemorylanjap/"> <i class="fa-solid fa-link"></i> </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn"> See more </a>
+        </div>
+    </div>
+
+    <!--///////// CONTACT /////////-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="subtitle"> Contact Me </h1>
+                    <p> <i class="fa-solid fa-envelope"></i> nurliyanakai.zuliskandar@gmail.com </p>
+                    <p> <i class="fa-solid fa-phone"></i> +673 7115742 </p>
+
+                    <div class="social_icons">
+                        <a href=""><i class="fa-brands fa-git"></i></a>
+                        <a href="https://www.linkedin.com/in/li-zuliskandar-93251118b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/KaiZool"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/118yM84HSQ5nj_w4X6F6w-oP-KRLYW3Ux?usp=share_link" download class="btn btn_2"> Download CV </a>
+                </div>
+
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn_2"> Submit </button>
+                    </form>
+
+                    <span id="msg">  </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> Liyana K Zul. 2023 </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active_tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("side_menu");
+
+        function openMenu()
+        {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu()
+        {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWSkni-CdrNEv7UbyzHkUif8jpIx42YymRZYPPir2FVz43mb5nUM0sZGUqevVTPznr4g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message was successfully sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
